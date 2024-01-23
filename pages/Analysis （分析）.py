@@ -108,7 +108,7 @@ def main():
         st.title("Misinformation Analyzer")
     
         # User input text box
-        user_input = st.text_area("Enter the article title to check if it's real or fake, remember this model is not fully accurate and should not be used as the only fake-article-checking method", "")
+        user_input = st.text_area("Enter the article title to check if it's real or fake, remember this model is not fully accurate and should not be used as the only fake-article-checking method.", "")
     
         # Button to classify the text
         if st.button("Classify"):

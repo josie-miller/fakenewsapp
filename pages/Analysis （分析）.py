@@ -99,6 +99,7 @@ def classify_text(input_text):
     return (prediction > 0.5).astype(int), prediction
 
 def main():
+    nltk.download('stopwords', quiet=True)
 
     language = st.sidebar.selectbox("Choose your language（选择您的语言）", ["English", "中文"], index=0 if st.session_state['language'] == 'English' else 1)
     st.session_state['language'] = language

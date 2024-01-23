@@ -21,7 +21,7 @@ def compare_texts(text1, text2):
 
 
 def main():
-   
+    nltk.download('stopwords', quiet=True)
     # Language selection widget
     language = st.sidebar.selectbox("Choose your language（选择您的语言）", ["English", "中文"], index=0 if st.session_state['language'] == 'English' else 1)
     st.session_state['language'] = language

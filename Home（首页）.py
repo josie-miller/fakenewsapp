@@ -7,8 +7,9 @@ Created on Tue Jan 23 08:52:24 2024
 """
 
 import streamlit as st
-
+import nltk
 def main():
+    nltk.download('stopwords', quiet=True)
     # Initialize language in session state if not already set
     if 'language' not in st.session_state:
         st.session_state['language'] = 'English'  # Default language

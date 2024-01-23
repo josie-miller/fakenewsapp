@@ -8,6 +8,7 @@ Created on Tue Jan 23 08:46:17 2024
 import streamlit as st
 from nltk.corpus import stopwords
 from collections import Counter
+import nltk
     
 def compare_texts(text1, text2):
     # Convert texts to sets of words, excluding stopwords
